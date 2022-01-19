@@ -2,17 +2,18 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-## Description
+## Criar o projeto
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+```bash
+$ nest new nomeDoProjeto
+```
 
-## Installation
-
+## Bibliotecas
 ```bash
 $ npm install
 ```
 
-## Running the app
+## Executar o projeto:
 
 ```bash
 # development
@@ -25,19 +26,6 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## License
+## Licença
 
 Nest is [MIT licensed](LICENSE).
