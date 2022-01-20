@@ -8,9 +8,28 @@
 $ nest new nomeDoProjeto
 ```
 
-## Bibliotecas
+## NVM Gerenciador do Node
+Checar as versões instaladas:
+````bash
+$ nvm ls
+````
+
+Instalar a versão 12.18.3:
+````bash
+$ nvm install v12.18.3
+````
+
+Para trocar a versão:
+````bash
+$ nvm use v14.17.0
+````
+
+## Dependências do Projeto
 ```bash
-$ npm install
+$ npm install @nestjs/microservices
+$ npm install amqplib amqp-connection-manager
+$ npm install moment-timezone
+$ npm install class-validator class-transformer
 ```
 
 ## Executar o projeto:
