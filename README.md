@@ -8,7 +8,7 @@
 $ nest new nomeDoProjeto
 ```
 
-## NVM Gerenciador do Node
+## NVM Gerenciador de Versão do Node
 Checar as versões instaladas:
 ````bash
 $ nvm ls
@@ -32,8 +32,28 @@ $ npm install moment-timezone
 $ npm install class-validator class-transformer
 ```
 
-## Executar o projeto:
+## Imagem do RabbitMQ disponiblizada pela Bitnami:
+```bash
+# Download da imagem
+$ docker pull bitnami/rabbitmq:latest
 
+# Executar o container
+$ docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 bitnami/rabbitmq:latest
+
+# Visualizar se o container está sendo executado
+$ docker ps
+```
+
+Acessar o browser e digitar
+http://localhost:15672
+
+Credenciais padrão disponibilizada pela Bitnami:
+Username: user
+Password: bitnami
+
+Virtual Host, informar o nome "smartranking" e clicar em Add virtual host.
+
+## Executar o projeto:
 ```bash
 # development
 $ npm run start
