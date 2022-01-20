@@ -51,7 +51,7 @@ Credenciais padrão disponibilizada pela Bitnami:
 Username: user
 Password: bitnami
 
-Virtual Host, informar o nome "smartranking" e clicar em Add virtual host.
+Utilizar aba Admin >> Virtual Host >> Add a new virtual host >>  informar no campo name "smartranking" >> Add virtual host.
 
 ## Executar o projeto:
 ```bash
