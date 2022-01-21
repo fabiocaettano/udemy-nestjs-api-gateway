@@ -13,7 +13,7 @@ export class AppController {
     this.clientAdminBackend = ClientProxyFactory.create({
       transport: Transport.RMQ,
       options: {
-        urls: ['amqp://user:q7W2UQk249gR@18.210.17.173:5672/smartranking'],
+        urls: ['amqp://user:bitnami@127.0.0.1:5672/smartranking'],
         queue: 'admin-backend'
       }
     })
@@ -23,7 +23,7 @@ export class AppController {
   @UsePipes(ValidationPipe)
   async criarCategoria(
     @Body() criarCategoriaDto: CriarCategoriaDto){
-      return await this.clientAdminBackend.emit('criar-categoria',this.criarCategoria)
+      return await this.clientAdminBackend.emit('criar-categoria',criarCategoriaDto)
     }
 
   
