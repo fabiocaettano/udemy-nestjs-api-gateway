@@ -45,7 +45,7 @@ $ docker ps
 ```
 
 Acessar o browser e digitar
-http://localhost:15672
+http://localhost:15672 ou http://ipDaEstacaoDeTrabalho:15672
 
 Credenciais padrão disponibilizada pela Bitnami:
 Username: user
